@@ -1,0 +1,7 @@
+{
+  "name": "devsecops-test-app",
+  "version": "1.0.0",
+  "description": "Test app for DevSecOps pipeline",
+  "main": "app.js",
+  "scripts": { "test": "echo \"No tests yet\"" }
+}
