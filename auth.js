@@ -1,13 +1,4 @@
-// Test file with intentional issues for security scan
-const password = "hardcoded-password-123";
-const apiKey = "sk_live_abc123secretkey";
-
-function login(user, pass) {
-  // SQL injection vulnerability
-  const query = "SELECT * FROM users WHERE username = '" + user + "' AND password = '" + pass + "'";
-  return db.query(query);
-}
-
-function getUser(id) {
-  return fetch('/api/users/' + id);
-}
+// Test trigger for DevSecOps scan - round 2
+const password = 'hardcoded123';  // intentional vulnerability for testing
+const query = 'SELECT * FROM users WHERE id = ' + userId;  // SQL injection for testing
+module.exports = { password, query };
