@@ -1,4 +1,4 @@
-// Test trigger for DevSecOps scan - round 2
-const password = 'hardcoded123';  // intentional vulnerability for testing
-const query = 'SELECT * FROM users WHERE id = ' + userId;  // SQL injection for testing
+// Test trigger round 3 - pgcrypto fix
+const password = 'hardcoded123';
+const query = 'SELECT * FROM users WHERE id = ' + userId;
 module.exports = { password, query };
