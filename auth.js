@@ -1,4 +1,4 @@
-// Round 8 - connection fix
+// Round 9 - review body fix
 const password = 'hardcoded123';
 const query = 'SELECT * FROM users WHERE id = ' + userId;
 module.exports = { password, query };
